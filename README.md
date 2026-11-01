@@ -4,18 +4,22 @@ Velvet is a local AI chat app with spoken replies, custom personalities, and a p
 
 ## Download
 
-**[Download Velvet 1.2.0 for Windows (.exe)](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.2.0-test.1/Velvet-Setup-1.2.0-x64.exe)**
+**[Download Velvet 1.3.0 for Windows (.exe)](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.3.0-test.1/Velvet-Setup-1.3.0-x64.exe)**
 
-[Release notes](https://github.com/Xpomodz/velvet-downloads/releases/tag/v1.2.0-test.1) · [Installation guide](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.2.0-test.1/Velvet-Install-Guide.txt)
+[Release notes](https://github.com/Xpomodz/velvet-downloads/releases/tag/v1.3.0-test.1) · [Installation guide](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.3.0-test.1/Velvet-Install-Guide.txt)
 
 This is an **unsigned test prerelease**. Windows may show an unknown-publisher warning, and Smart App Control may block it. If blocked, keep Windows security enabled and send the developer a screenshot of the exact message.
 
-## New in 1.2.0
+## New in 1.3.0
 
-- Native right-click editing and copying in text fields and chat replies.
-- Improved personality setup with Llama 3.2 · 3B, the full Roger preset, an 8,000-character editor, and clear save status.
-- A dark purple design with gradients across the app and setup screens.
-- Changeable portraits that follow each voice in chat, the voice library, and the studio. PNG, JPEG, and WebP are supported, up to 8 MB.
+- Progress rings and bars for chat, speech and engine loading.
+- Switch between chats, Voice studio and Settings while accepted jobs continue.
+- One shared queue runs Velvet's heavy tasks one at a time, with visible queue positions and cancellation in **Activity**.
+- Queued tasks retain the voice, model and personality selected when submitted. Completed output remains available after navigation and refresh.
+
+Keep Velvet open while the queue works. Closing it stops unfinished work; completed conversations and recordings remain saved. Active cancellation can wait for the current model operation to finish. Speech percentages measure completed passages, not seconds remaining.
+
+The purple gradients, native right-click editing, full Roger preset, 8,000-character personality editor and per-voice portraits from 1.2.0 remain available.
 
 ## Install or update
 
@@ -35,8 +39,10 @@ Normal chat, speech, dictation, and recordings are processed locally. First setu
 
 ## Verification
 
-[Verification report](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.2.0-test.1/Velvet-1.2.0-verification.json) · [SHA-256 checksums](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.2.0-test.1/SHA256SUMS.txt)
+[Verification report](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.3.0-test.1/Velvet-1.3.0-verification.json) · [SHA-256 checksums](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.3.0-test.1/SHA256SUMS.txt)
 
-The application build and installer packaging passed, followed by 10 checks of the installed app's private runtime, editing roles, complete personality, portrait, actual CPU chat and speech, shutdown, and saved data after relaunch. Tests used an isolated runtime on the development PC; second-PC installation and Windows signing/trust acceptance remain unverified. See the release notes for the test scope.
+The production build, 30 package-content checks, 70 backend tests, 23 desktop/installer tests, 9 controlled queue checks and 15 portrait/personality/layout regression checks passed. Seven checks of the installed app passed with real local CPU chat and speech, including queue order, navigation, cancellation, playback and persistence after restart.
+
+Tests used an isolated private runtime on one Windows PC with cached downloads/models. Controlled browser engine adapters are identified separately in the report. Audio decoding and muted playback were verified; voice fidelity was not assessed. Second-PC installation, fresh downloads and Windows signing/trust acceptance remain unverified.
 
 This repository contains installers and supporting release documents. It does not contain the application's source code or private developer chat history. **Built with Llama.** Third-party and model license notices are included with the installer.
