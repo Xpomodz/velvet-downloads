@@ -4,6 +4,8 @@ Velvet is a local AI chat app with spoken replies, custom personalities, a portr
 
 ## Download
 
+**New: [Download Project Hub — the all-in-one installer](https://github.com/Xpomodz/project-hub-downloads/releases/download/v1.0.3/Project-Hub-Setup-1.0.3-x64.exe)** for Velvet, Sonora, Worktable, and PadForge. It detects existing apps and downloads only the tools you choose, with automatic updates per app. Internet access is required. [Project Hub release notes and files](https://github.com/Xpomodz/project-hub-downloads/releases/tag/v1.0.3).
+
 **[Download Velvet 1.4.0 for Windows (.exe)](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.4.0-test.1/Velvet-Setup-1.4.0-x64.exe)**
 
 [Release notes](https://github.com/Xpomodz/velvet-downloads/releases/tag/v1.4.0-test.1) · [Installation guide](https://github.com/Xpomodz/velvet-downloads/releases/download/v1.4.0-test.1/Velvet-Install-Guide.txt)
